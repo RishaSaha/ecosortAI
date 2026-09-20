@@ -201,6 +201,50 @@ st.markdown("""
     opacity: 1 !important;
 }
 
+/* -------------------------------------------------
+   FINAL SIDEBAR TEXT OVERRIDE
+   Keep sidebar content readable on dark background
+------------------------------------------------- */
+
+/* Sidebar background */
+[data-testid="stSidebar"] {
+    background-color: #262730 !important;
+}
+
+/* Sidebar headings */
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3,
+[data-testid="stSidebar"] h4 {
+    color: #ffffff !important;
+}
+
+/* Sidebar normal text */
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] li,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] label {
+    color: #ffffff !important;
+}
+
+/* Sidebar markdown text */
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] li {
+    color: #ffffff !important;
+}
+
+/* Sidebar caption / Important Notice */
+[data-testid="stSidebar"] [data-testid="stCaptionContainer"],
+[data-testid="stSidebar"] [data-testid="stCaptionContainer"] p {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Sidebar divider */
+[data-testid="stSidebar"] hr {
+    border-color: #555555 !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
