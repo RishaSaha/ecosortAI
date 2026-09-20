@@ -22,33 +22,103 @@ st.set_page_config(
 st.markdown("""
 <style>
 
-    /* Main application background */
+    /* -------------------------------------------------
+       MAIN APPLICATION BACKGROUND
+    ------------------------------------------------- */
+
     .stApp {
         background-color: #f4f8f4;
     }
 
-    /* Main title */
+    [data-testid="stAppViewContainer"] {
+        background-color: #f4f8f4;
+    }
+
+    /* Main content text */
+    [data-testid="stAppViewContainer"] .main {
+        color: #1f2937;
+    }
+
+
+    /* -------------------------------------------------
+       MAIN TITLE
+    ------------------------------------------------- */
+
     h1 {
-        color: #1b5e20;
+        color: #1b5e20 !important;
         font-weight: 700;
     }
 
-    /* Section headings */
-    h2, h3 {
-        color: #2e7d32;
+
+    /* -------------------------------------------------
+       SECTION HEADINGS
+    ------------------------------------------------- */
+
+    h2,
+    h3 {
+        color: #2e7d32 !important;
     }
 
-    /* Input box */
+
+    /* -------------------------------------------------
+       GENERAL TEXT VISIBILITY
+    ------------------------------------------------- */
+
+    .main p,
+    .main li,
+    .main span,
+    .main label {
+        color: #1f2937;
+    }
+
+    /* Markdown text */
+    [data-testid="stMarkdownContainer"] p,
+    [data-testid="stMarkdownContainer"] li {
+        color: #1f2937;
+    }
+
+
+    /* -------------------------------------------------
+       TEXT INPUT AND TEXT AREA
+    ------------------------------------------------- */
+
     .stTextInput > div > div > input {
         border-radius: 10px;
         border: 1px solid #a5d6a7;
         padding: 12px;
+        color: #1f2937 !important;
+        background-color: #ffffff !important;
     }
 
-    /* Buttons */
+    /* Text area */
+    .stTextArea textarea {
+        border-radius: 10px;
+        border: 1px solid #a5d6a7;
+        padding: 12px;
+        color: #1f2937 !important;
+        background-color: #ffffff !important;
+    }
+
+    /* Text input and text area placeholder */
+    .stTextInput input::placeholder,
+    .stTextArea textarea::placeholder {
+        color: #6b7280 !important;
+        opacity: 1 !important;
+    }
+
+    /* Widget labels */
+    [data-testid="stWidgetLabel"] p {
+        color: #1f2937 !important;
+    }
+
+
+    /* -------------------------------------------------
+       BUTTONS
+    ------------------------------------------------- */
+
     .stButton > button {
         background-color: #2e7d32;
-        color: white;
+        color: white !important;
         border-radius: 10px;
         border: none;
         padding: 10px 22px;
@@ -57,12 +127,44 @@ st.markdown("""
 
     .stButton > button:hover {
         background-color: #1b5e20;
-        color: white;
+        color: white !important;
     }
 
-    /* Information boxes */
+
+    /* -------------------------------------------------
+       INFORMATION BOXES
+    ------------------------------------------------- */
+
     .stAlert {
         border-radius: 10px;
+    }
+
+
+    /* -------------------------------------------------
+       EXPANDERS
+    ------------------------------------------------- */
+
+    [data-testid="stExpander"] {
+        color: #1f2937;
+    }
+
+    [data-testid="stExpander"] p {
+        color: #1f2937;
+    }
+
+
+    /* -------------------------------------------------
+       SIDEBAR
+    ------------------------------------------------- */
+
+    [data-testid="stSidebar"] {
+        background-color: #262730;
+    }
+
+    [data-testid="stSidebar"] p,
+    [data-testid="stSidebar"] li,
+    [data-testid="stSidebar"] span {
+        color: #ffffff;
     }
 
 </style>
