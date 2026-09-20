@@ -167,6 +167,40 @@ st.markdown("""
         color: #ffffff;
     }
 
+    /* -------------------------------------------------
+   DISCLAIMER AND SMALL TEXT VISIBILITY
+------------------------------------------------- */
+
+/* Streamlit caption text */
+.stCaption,
+[data-testid="stCaptionContainer"],
+[data-testid="stCaptionContainer"] p {
+    color: #374151 !important;
+    opacity: 1 !important;
+}
+
+/* Markdown disclaimer text */
+.main small,
+.main small p {
+    color: #374151 !important;
+    opacity: 1 !important;
+}
+
+/* All normal markdown text */
+[data-testid="stMarkdownContainer"] p {
+    color: #1f2937 !important;
+}
+
+/* Disclaimer inside custom HTML containers */
+.disclaimer,
+.disclaimer p {
+    color: #374151 !important;
+    background-color: #e8f5e9;
+    padding: 12px;
+    border-radius: 8px;
+    opacity: 1 !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
