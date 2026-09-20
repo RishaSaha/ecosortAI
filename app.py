@@ -1051,10 +1051,10 @@ if st.button("🔍 Analyze Waste", use_container_width=True):
         )
 
         with col2:
-         st.metric(
-          label="Confidence Estimate",
-          value=f"{confidence * 100:.1f}%"
-        )
+            st.metric(
+                label="Confidence Estimate",
+                value="Rule-based" if special_result is not None else f"{confidence * 100:.1f}%"
+            )
 
         st.divider()
 
