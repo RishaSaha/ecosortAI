@@ -3,6 +3,14 @@
 
 ### An AI-Powered Waste Segregation and Sustainable Disposal Assistant
 
+### 🚀 Live Demo
+
+🌐 **Try EcoSort AI:** [Launch the application](https://ecosortai-kbwtc5vvwnhybqmvufvsf4.streamlit.app/)
+
+EcoSort AI is deployed using **Streamlit Community Cloud** and can be accessed through the live demo link above.
+
+### 💡About the Project
+
 EcoSort AI is a Streamlit-based prototype that helps users identify likely waste categories and understand appropriate disposal approaches through natural-language waste descriptions.
 
 The project combines machine learning, safety-focused detection rules, and item-specific knowledge retrieval to provide more informative waste-management guidance.
@@ -107,7 +115,7 @@ Users should take additional care when handling hazardous, medical, chemical, ba
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/RishaSaha/ecosortAI.git
 cd ecosortAI
 ```
 
